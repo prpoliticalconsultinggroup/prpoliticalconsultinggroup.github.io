@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P&amp;R Political Consulting Group | Research-Based Political Strategy</title>
+  <meta name="description" content="P&R Political Consulting Group provides research-based political strategy for candidates, issue campaigns, and local leaders.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23002b55'/%3E%3Cg fill='%23fff' transform='translate(8 11) scale(.75)'%3E%3Cpolygon points='32,2 62,16 2,16'/%3E%3Crect x='4' y='18' width='56' height='4'/%3E%3Crect x='9' y='24' width='6' height='20'/%3E%3Crect x='21' y='24' width='6' height='20'/%3E%3Crect x='37' y='24' width='6' height='20'/%3E%3Crect x='49' y='24' width='6' height='20'/%3E%3Crect x='4' y='46' width='56' height='4'/%3E%3Crect x='1' y='51' width='62' height='4'/%3E%3C/g%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prpoliticalconsulting.com/">
+  <meta property="og:title" content="P&amp;R Political Consulting Group">
+  <meta property="og:description" content="Smarter Strategy. Stronger Campaigns. Research-based political strategy for candidates, causes, and local leaders.">
+  <meta property="og:image" content="https://prpoliticalconsulting.com/share.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0b1d36;
+      --navy-2: #071426;
+      --navy-3: #13294a;
+      --red: #b31b2e;
+      --red-2: #93151f;
+      --paper: #f7f4ee;
+      --white: #ffffff;
+      --text: #1a2333;
+      --muted: #566176;
+      --line: #dcd6ca;
+      --line-dark: rgba(255,255,255,.16);
+      --serif: "Libre Baskerville", Georgia, "Times New Roman", serif;
+      --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+      --max: 1160px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+    body { margin: 0; font-family: var(--sans); color: var(--text); background: var(--white); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 700; line-height: 1.18; color: var(--navy); }
+    p { margin: 0; }
+    .wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+    .icon { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .label { display: block; font-size: .72rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
+    .rule { width: 48px; height: 2px; background: var(--red); margin: 22px 0 0; border: 0; }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 28px; font-family: var(--sans); font-weight: 600; font-size: .9rem; letter-spacing: .02em; border: 1px solid transparent; border-radius: 2px; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+    .btn-red { background: var(--red); color: #fff; }
+    .btn-red:hover { background: var(--red-2); }
+    .btn-navy { background: var(--navy); color: #fff; }
+    .btn-navy:hover { background: var(--navy-3); }
+    .btn-line { border-color: rgba(255,255,255,.55); color: #fff; }
+    .btn-line:hover { background: #fff; color: var(--navy); }
+    .btn-outline { border-color: var(--navy); color: var(--navy); }
+    .btn-outline:hover { background: var(--navy); color: #fff; }
+
+    /* Utility bar */
+    .utility { background: var(--navy-2); color: rgba(255,255,255,.72); font-size: .78rem; letter-spacing: .04em; }
+    .utility .wrap { display: flex; justify-content: space-between; align-items: center; height: 38px; gap: 16px; }
+    .utility a { color: #fff; font-weight: 500; }
+    .utility a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header { position: sticky; top: 0; z-index: 50; background: var(--white); border-bottom: 1px solid var(--line); }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 84px; }
+    .logo { display: flex; align-items: center; gap: 14px; color: var(--navy); }
+    .logo svg { width: 46px; fill: currentColor; }
+    .logo-text { display: flex; flex-direction: column; line-height: 1.1; padding-left: 14px; border-left: 1px solid var(--line); }
+    .logo-text b { font-family: var(--serif); font-size: 1.4rem; }
+    .logo-text span { font-size: .6rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); }
+    .menu { display: flex; align-items: center; gap: 30px; }
+    .menu a:not(.btn) { font-size: .86rem; font-weight: 500; color: var(--text); letter-spacing: .02em; padding: 6px 0; border-bottom: 2px solid transparent; transition: border-color .2s, color .2s; }
+    .menu a:not(.btn):hover { color: var(--navy); border-color: var(--red); }
+    .menu .btn { padding: 11px 20px; }
+    .nav-toggle { display: none; background: none; border: 0; color: var(--navy); font-size: 1.5rem; cursor: pointer; }
+
+    /* Hero */
+    .hero { position: relative; color: #fff; background: var(--navy); overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background: linear-gradient(100deg, rgba(7,20,38,.97) 0%, rgba(11,29,54,.9) 45%, rgba(11,29,54,.55) 100%), url("hero.jpg") center / cover no-repeat, linear-gradient(135deg, #12305a, #0b1d36); }
+    .hero-bg::after { content: ""; position: absolute; right: -4%; bottom: -6%; width: 46%; aspect-ratio: 64 / 56; opacity: .06;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 56' fill='white'%3E%3Cpolygon points='32,2 62,16 2,16'/%3E%3Crect x='4' y='18' width='56' height='4'/%3E%3Crect x='9' y='24' width='6' height='20'/%3E%3Crect x='21' y='24' width='6' height='20'/%3E%3Crect x='37' y='24' width='6' height='20'/%3E%3Crect x='49' y='24' width='6' height='20'/%3E%3Crect x='4' y='46' width='56' height='4'/%3E%3Crect x='1' y='51' width='62' height='4'/%3E%3C/svg%3E") center / contain no-repeat; }
+    .hero-inner { position: relative; padding: 120px 0 110px; max-width: 720px; }
+    .hero .label { color: #e7a0a8; }
+    .hero h1 { color: #fff; font-size: clamp(2.6rem, 5.6vw, 4.4rem); font-weight: 400; letter-spacing: -.01em; }
+    .hero h1 b { font-weight: 700; }
+    .hero .rule { margin-top: 28px; }
+    .hero-lead { font-size: 1.15rem; color: rgba(255,255,255,.82); margin-top: 26px; max-width: 580px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 38px; }
+
+    .creds { position: relative; background: var(--navy-2); border-top: 1px solid var(--line-dark); color: #fff; }
+    .creds .wrap { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .cred { display: flex; gap: 16px; align-items: flex-start; padding: 30px 28px; border-left: 1px solid var(--line-dark); }
+    .cred:first-child { border-left: 0; padding-left: 0; }
+    .cred .icon { flex-shrink: 0; font-size: 1.6rem; color: #e7a0a8; margin-top: 2px; }
+    .cred b { display: block; font-family: var(--serif); font-size: 1.05rem; }
+    .cred span { font-size: .88rem; color: rgba(255,255,255,.65); }
+
+    /* Sections */
+    .sec { padding: 110px 0; }
+    .sec.paper { background: var(--paper); }
+    .sec-head { max-width: 680px; margin-bottom: 56px; }
+    .sec-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+    .sec-head.center .rule { margin-left: auto; margin-right: auto; }
+    .sec-head h2 { font-size: clamp(2rem, 3.8vw, 2.9rem); }
+    .sec-head p { color: var(--muted); font-size: 1.08rem; margin-top: 18px; }
+
+    /* Firm */
+    .firm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .firm-text p { color: var(--muted); font-size: 1.08rem; margin-bottom: 18px; }
+    .firm-text p:first-child { font-family: var(--serif); font-size: 1.35rem; line-height: 1.55; color: var(--navy); }
+    .principles { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+    .principles li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+    .principles .n { font-family: var(--serif); color: var(--red); font-size: 1.1rem; }
+    .principles h3 { font-size: 1.12rem; margin-bottom: 4px; }
+    .principles p { color: var(--muted); font-size: .96rem; }
+
+    /* Practice areas */
+    .areas { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); background: var(--white); }
+    .area { padding: 40px 36px 38px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background .25s; position: relative; }
+    .area::before { content: ""; position: absolute; left: 0; top: 0; width: 0; height: 3px; background: var(--red); transition: width .3s; }
+    .area:hover { background: #fbfaf7; }
+    .area:hover::before { width: 100%; }
+    .area .icon { font-size: 2rem; color: var(--navy); }
+    .area .num { position: absolute; top: 36px; right: 34px; font-family: var(--serif); font-size: .9rem; color: var(--muted); }
+    .area h3 { font-size: 1.25rem; margin: 26px 0 10px; }
+    .area p { color: var(--muted); font-size: .96rem; }
+    .races { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 40px; }
+    .races b { font-size: .72rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--navy); margin-right: 8px; }
+    .races span { font-size: .85rem; color: var(--navy); border: 1px solid var(--line); background: var(--white); padding: 7px 14px; border-radius: 999px; }
+
+    /* Approach */
+    .approach { background: var(--navy); color: #fff; }
+    .approach .sec-head h2 { color: #fff; }
+    .approach .sec-head p { color: rgba(255,255,255,.7); }
+    .approach .label { color: #e7a0a8; }
+    .process { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; counter-reset: s; }
+    .process li { position: relative; padding: 0 26px 0 0; }
+    .process .dot { display: flex; align-items: center; gap: 0; margin-bottom: 26px; }
+    .process .dot span { width: 52px; height: 52px; border-radius: 50%; border: 1px solid rgba(255,255,255,.4); display: grid; place-items: center; font-family: var(--serif); font-size: 1.05rem; flex-shrink: 0; background: var(--navy); }
+    .process .dot::after { content: ""; flex: 1; height: 1px; background: var(--line-dark); }
+    .process li:last-child .dot::after { display: none; }
+    .process h3 { color: #fff; font-size: 1.2rem; margin-bottom: 10px; }
+    .process p { color: rgba(255,255,255,.7); font-size: .95rem; }
+
+    /* Team */
+    .team-list { display: grid; gap: 32px; }
+    .member { display: grid; grid-template-columns: 260px 1fr; gap: 52px; align-items: start; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+    .member:last-child { border-bottom: 0; padding-bottom: 0; }
+    .member-photo { position: relative; aspect-ratio: 4 / 5; background: linear-gradient(160deg, #1b3a66, #0b1d36); overflow: hidden; display: grid; place-items: end center; color: rgba(255,255,255,.22); outline: 1px solid var(--line); outline-offset: 8px; }
+    .member-photo .ph { width: 62%; margin-bottom: -4%; fill: currentColor; }
+    .member-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+    .member-info { padding-top: 8px; }
+    .member-info .title { font-size: .72rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--red); }
+    .member-info h3 { font-size: clamp(1.8rem, 3vw, 2.3rem); margin: 10px 0 4px; }
+    .member-info .area-of { font-family: var(--serif); font-style: italic; color: var(--muted); font-size: 1.05rem; }
+    .member-info .bio { color: var(--text); font-size: 1.04rem; margin-top: 20px; max-width: 640px; }
+    .edu { list-style: none; padding: 0; margin: 26px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; border-top: 1px solid var(--line); max-width: 680px; }
+    .edu li { padding: 14px 0 0; }
+    .edu b { display: block; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--navy); }
+    .edu span { font-size: .92rem; color: var(--muted); }
+
+    /* Audit */
+    .audit-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 72px; align-items: start; }
+    .audit-steps { list-style: none; padding: 0; margin: 34px 0 0; }
+    .audit-steps li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 18px 0; border-top: 1px solid var(--line); }
+    .audit-steps li:last-child { border-bottom: 1px solid var(--line); }
+    .audit-steps .n { font-family: var(--serif); color: var(--red); font-size: 1.1rem; }
+    .audit-steps h3 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: 2px; }
+    .audit-steps p { color: var(--muted); font-size: .94rem; }
+    .form-card { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--navy); padding: 44px; box-shadow: 0 24px 60px -30px rgba(11,29,54,.35); }
+    .form-card h3 { font-size: 1.5rem; }
+    .form-card .sub { color: var(--muted); font-size: .94rem; margin: 6px 0 28px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .field { display: block; margin-bottom: 18px; }
+    .field span { display: block; font-size: .74rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--navy); margin-bottom: 8px; }
+    .field input, .field textarea { width: 100%; font: inherit; font-size: 1rem; color: var(--text); background: #fbfaf7; border: 1px solid var(--line); border-radius: 2px; padding: 13px 14px; transition: border-color .2s, box-shadow .2s, background .2s; }
+    .field textarea { min-height: 120px; resize: vertical; }
+    .field input:focus, .field textarea:focus { outline: none; border-color: var(--navy); background: #fff; box-shadow: 0 0 0 3px rgba(11,29,54,.12); }
+    .form-card .btn { width: 100%; padding: 16px; margin-top: 4px; }
+    .fine { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 16px; font-size: .8rem; color: var(--muted); }
+    .form-status { text-align: center; font-weight: 600; margin-top: 12px; min-height: 1em; color: var(--navy); }
+
+    /* Footer */
+    .site-footer { background: var(--navy-2); color: rgba(255,255,255,.66); font-size: .92rem; }
+    .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 48px; padding: 72px 0 56px; }
+    .foot-grid .logo { color: #fff; }
+    .foot-grid .logo-text { border-color: var(--line-dark); }
+    .foot-grid .logo-text span { color: rgba(255,255,255,.6); }
+    .foot-about { margin-top: 22px; max-width: 360px; }
+    .foot-social { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; color: #fff; font-weight: 500; font-size: .9rem; }
+    .foot-social svg { width: 22px; height: 22px; fill: currentColor; opacity: .9; }
+    .foot-social:hover span { text-decoration: underline; }
+    .foot-grid h4 { margin: 0 0 18px; color: #fff; font-size: .72rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; }
+    .foot-grid ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+    .foot-grid a:hover { color: #fff; }
+    .foot-bottom { border-top: 1px solid var(--line-dark); padding: 22px 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: .8rem; }
+
+    /* Reveal */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal { opacity: 1; transform: none; transition: none; } }
+
+    /* Responsive */
+    @media (max-width: 980px) {
+      .menu { position: absolute; top: 84px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: #fff; border-bottom: 1px solid var(--line); max-height: 0; overflow: hidden; transition: max-height .3s; }
+      .menu.open { max-height: 460px; }
+      .menu a:not(.btn) { padding: 15px 24px; border-bottom: 0; border-top: 1px solid var(--line); }
+      .menu .btn { margin: 14px 24px 20px; }
+      .nav-toggle { display: block; }
+      .firm-grid, .audit-grid { grid-template-columns: 1fr; gap: 48px; }
+      .areas { grid-template-columns: 1fr 1fr; }
+      .process { grid-template-columns: 1fr 1fr; gap: 40px 0; }
+      .process li:nth-child(2) .dot::after { display: none; }
+      .member { grid-template-columns: 200px 1fr; gap: 36px; }
+      .foot-grid { grid-template-columns: 1fr 1fr; }
+      .foot-grid > div:first-child { grid-column: 1 / -1; }
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 0 16px; }
+      .utility .wrap > span { display: none; }
+      .utility .wrap { justify-content: center; }
+      .logo svg { width: 38px; }
+      .logo-text b { font-size: 1.2rem; }
+      .logo-text span { font-size: .52rem; letter-spacing: .18em; }
+      .hero-inner { padding: 84px 0 76px; }
+      .hero-actions .btn { width: 100%; }
+      .creds .wrap { grid-template-columns: 1fr; }
+      .cred, .cred:first-child { border-left: 0; border-top: 1px solid var(--line-dark); padding: 22px 0; }
+      .cred:first-child { border-top: 0; }
+      .sec { padding: 76px 0; }
+      .areas { grid-template-columns: 1fr; }
+      .area { padding: 32px 24px; }
+      .process { grid-template-columns: 1fr; gap: 30px; }
+      .process .dot::after { display: none; }
+      .member { grid-template-columns: 1fr; gap: 28px; }
+      .member-photo { max-width: 260px; }
+      .edu { grid-template-columns: 1fr; }
+      .row { grid-template-columns: 1fr; }
+      .form-card { padding: 28px 20px; }
+      .foot-grid { grid-template-columns: 1fr; }
+    }
+
+    /* v3 sections */
+    .logo svg { height: 40px; }
+    .lede { font-family: var(--serif); font-size: clamp(1.9rem, 3.6vw, 2.9rem); line-height: 1.3; color: var(--navy); max-width: 900px; }
+    .firm-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 44px; padding-top: 32px; border-top: 1px solid var(--line); }
+    .firm-cols p { color: var(--muted); font-size: 1.06rem; }
+    .practice-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 72px; align-items: start; }
+    .practice-intro { position: sticky; top: 130px; }
+    .practice-intro h2 { font-size: clamp(2rem, 3.6vw, 2.7rem); }
+    .practice-intro p { color: var(--muted); font-size: 1.04rem; margin: 18px 0 28px; }
+    .practice-list { margin: 0; border-top: 1px solid var(--line); }
+    .practice-list div { display: grid; grid-template-columns: 220px 1fr; gap: 28px; padding: 26px 0; border-bottom: 1px solid var(--line); }
+    .practice-list dt { font-family: var(--serif); font-weight: 700; color: var(--navy); font-size: 1.08rem; }
+    .practice-list dd { margin: 0; color: var(--muted); }
+    .plain-h { font-size: clamp(2rem, 3.6vw, 2.7rem); margin-bottom: 48px; }
+    .audit-band { background: var(--paper); }
+    .audit-copy h2 { font-size: clamp(2rem, 3.6vw, 2.7rem); margin-bottom: 22px; }
+    .audit-copy p { color: var(--muted); font-size: 1.06rem; margin-bottom: 16px; max-width: 480px; }
+    @media (max-width: 980px) {
+      .practice-grid { grid-template-columns: 1fr; gap: 36px; }
+      .practice-intro { position: static; }
+    }
+    @media (max-width: 640px) {
+      .firm-cols { grid-template-columns: 1fr; gap: 18px; }
+      .practice-list div { grid-template-columns: 1fr; gap: 6px; }
+      .logo svg { height: 34px; }
+    }
+  </style>
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-4M12 16V8M16 16v-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-plan" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v10H9l-5 4z"/><path d="M8 9h8M8 12h5"/></symbol>
+    <symbol id="i-door" viewBox="0 0 24 24"><path d="M6 21V4h10v17M4 21h16M13 12h.01"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v14c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="logo" viewBox="0 0 64 56"><polygon points="32,2 62,16 2,16"/><rect x="4" y="18" width="56" height="4"/><rect x="9" y="24" width="6" height="20"/><rect x="21" y="24" width="6" height="20"/><rect x="37" y="24" width="6" height="20"/><rect x="49" y="24" width="6" height="20"/><rect x="4" y="46" width="56" height="4"/><rect x="1" y="51" width="62" height="4"/></symbol>
+    <symbol id="person" viewBox="0 0 448 512"><path d="M224 256a128 128 0 1 0 0-256 128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3 0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3h-91.4z"/></symbol>
+  </svg>
+
+  <div class="utility">
+    <div class="wrap">
+      <span>Political Strategy &amp; Research <span class="hide-sm">· Candidates, causes, and local leaders</span></span>
+      <a href="#audit">Request a Free Starter Audit →</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="wrap nav">
+      <a href="#top" class="logo" aria-label="P&R Political Consulting Group home">
+        <svg aria-hidden="true"><use href="#logo"/></svg>
+        <span class="logo-text"><b>P&amp;R</b><span>Political Consulting Group</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button>
+      <nav class="menu">
+        <a href="#firm">The Firm</a>
+        <a href="#practice">Practice Areas</a>
+        <a href="#team">Our Team</a>
+        <a href="#audit" class="btn btn-navy">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="wrap">
+      <div class="hero-inner">
+        <h1><b>Smarter Strategy.</b><br>Stronger Campaigns.</h1>
+        <hr class="rule">
+        <p class="hero-lead">Research-based political strategy for candidates, issue campaigns, and local leaders. We help clients make decisions with evidence, so time and resources go where they matter most.</p>
+        <div class="hero-actions">
+          <a href="#audit" class="btn btn-red">Request a Free Starter Audit</a>
+          <a href="#practice" class="btn btn-line">Our Practice Areas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="firm">
+    <div class="wrap">
+      <p class="lede">Most local politics runs on guesswork. P&amp;R exists to change that.</p>
+      <div class="firm-cols">
+        <p>P&amp;R Political Consulting Group is a political strategy and research partnership serving candidates, issue campaigns, and local organizations. We are trained in political science and campaigning, and we bring that training to the local level, where it is usually missing.</p>
+        <p>In practice, that means helping clients plan with evidence: what the research says works, what the data actually show, and where limited time and resources will make the biggest difference.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec paper" id="practice">
+    <div class="wrap practice-grid">
+      <div class="practice-intro">
+        <h2>Practice Areas</h2>
+        <p>Research and strategy for candidates, ballot and issue campaigns, advocacy groups, and local officials, scaled to the size of the challenge.</p>
+        <a href="#audit" class="btn btn-outline">Start a conversation</a>
+      </div>
+      <dl class="practice-list">
+        <div><dt>Strategic Planning</dt><dd>A written strategy with clear goals, a timeline, and priorities, grounded in research on what works locally.</dd></div>
+        <div><dt>Electoral &amp; District Analysis</dt><dd>Past results, turnout, and public data to show where your votes are and where to focus.</dd></div>
+        <div><dt>Message &amp; Public Opinion Research</dt><dd>Research on what voters and residents think, and how to frame a message that connects with them.</dd></div>
+        <div><dt>Voter Engagement Strategy</dt><dd>Outreach and turnout plans based on field research, built for volunteers and small teams to carry out.</dd></div>
+        <div><dt>Issue &amp; Policy Research</dt><dd>Background briefs, policy analysis, questionnaire answers, and debate preparation on the issues that matter.</dd></div>
+        <div><dt>Strategic Review</dt><dd>An outside assessment of a current plan, message, or materials, with clear, prioritized recommendations.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="sec" id="team">
+    <div class="wrap">
+      <h2 class="plain-h">Partners</h2>
+      <div class="team-list">
+        <article class="member">
+          <div class="member-photo"><svg class="ph"><use href="#person"/></svg><img src="parker.jpg" alt="Parker Robinson" onerror="this.remove()"></div>
+          <div class="member-info">
+            <span class="title">Partner</span>
+            <h3>Parker Robinson</h3>
+            <p class="area-of">Field Strategy &amp; Voter Targeting</p>
+            <p class="bio">Parker focuses on voter targeting and field strategy research, turning election data into clear plans for where and how to reach voters.</p>
+            <ul class="edu">
+              <li><b>M.A. Candidate</b><span>Political Science (Campaigning), University of Florida</span></li>
+              <li><b>B.A.</b><span>Political Science, University of North Florida</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="member">
+          <div class="member-photo"><svg class="ph"><use href="#person"/></svg><img src="ryan.jpg" alt="Ryan Lang-Antonopoulos" onerror="this.remove()"></div>
+          <div class="member-info">
+            <span class="title">Partner</span>
+            <h3>Ryan Lang-Antonopoulos</h3>
+            <p class="area-of">Campaign Strategy &amp; Messaging</p>
+            <p class="bio">Ryan focuses on campaign strategy and message research, helping candidates say what they stand for in a way voters remember.</p>
+            <ul class="edu">
+              <li><b>M.A. Candidate</b><span>Political Science (Campaigning), University of Florida</span></li>
+              <li><b>B.A.</b><span>Political Science, University of Florida</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec audit-band" id="audit">
+    <div class="wrap audit-grid">
+      <div class="audit-copy">
+        <h2>Request a free starter audit.</h2>
+        <p>Tell us about your race or project using the form. We'll look at the relevant data and results, along with any plan or materials you want to share, and within about a week send you a short memo with the opportunities we see and what we'd prioritize.</p>
+        <p>There's no cost and no obligation. If it's useful and you'd like more help, we can talk about that then.</p>
+      </div>
+      <form class="form-card" action="https://formspree.io/f/mdeeebez" method="POST">
+        <h3>Request a Starter Audit</h3>
+        <p class="sub">All inquiries are confidential.</p>
+        <div class="row">
+          <label class="field"><span>Name *</span><input type="text" name="name" placeholder="Your full name" required></label>
+          <label class="field"><span>Email *</span><input type="email" name="email" placeholder="you@email.com" required></label>
+        </div>
+        <label class="field"><span>Race, Issue, or Organization *</span><input type="text" name="office" placeholder="e.g., City Council District 3 or a local ballot measure" required></label>
+        <label class="field"><span>Brief Description *</span><textarea name="description" placeholder="Tell us about your goals and challenges..." required></textarea></label>
+        <input type="hidden" name="_subject" value="New Starter Audit Request">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit" class="btn btn-navy">Submit Request</button>
+        <p class="fine"><svg class="icon"><use href="#i-lock"/></svg> Confidential · No obligation</p>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap foot-grid">
+      <div>
+        <a href="#top" class="logo"><svg aria-hidden="true"><use href="#logo"/></svg><span class="logo-text"><b>P&amp;R</b><span>Political Consulting Group</span></span></a>
+        <p class="foot-about">Research-based political strategy for candidates, causes, and local leaders.</p>
+        <a class="foot-social" href="https://www.linkedin.com/company/p-r-political-consulting-group/" target="_blank" rel="noopener" aria-label="P&amp;R Political Consulting Group on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>Follow us on LinkedIn</span></a>
+      </div>
+      <div>
+        <h4>Practice Areas</h4>
+        <ul><li><a href="#practice">Strategic Planning</a></li><li><a href="#practice">Electoral Analysis</a></li><li><a href="#practice">Public Opinion Research</a></li><li><a href="#practice">Policy Research</a></li></ul>
+      </div>
+      <div>
+        <h4>Firm</h4>
+        <ul><li><a href="#firm">The Firm</a></li><li><a href="#team">Our Team</a></li><li><a href="#audit">Contact Us</a></li></ul>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© <span id="year"></span> P&amp;R Political Consulting Group. All rights reserved.</span>
+      <span>prpoliticalconsulting.com</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector(".nav-toggle");
+    const menu = document.querySelector(".menu");
+    const setIcon = (open) => toggle.innerHTML = '<svg class="icon"><use href="#i-' + (open ? 'close' : 'menu') + '"/></svg>';
+    toggle.addEventListener("click", () => { const open = menu.classList.toggle("open"); toggle.setAttribute("aria-expanded", open); setIcon(open); });
+    menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => { menu.classList.remove("open"); toggle.setAttribute("aria-expanded", "false"); setIcon(false); }));
+
+
+    const form = document.querySelector(".form-card");
+    const status = form.querySelector(".form-status");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector("button[type=submit]");
+      btn.disabled = true; btn.textContent = "Sending...";
+      try {
+        const res = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+        if (res.ok) { form.reset(); status.textContent = "Thank you. We will be in touch within a few business days."; }
+        else { status.textContent = "Something went wrong. Please try again."; }
+      } catch { status.textContent = "Network error. Please try again."; }
+      finally { btn.disabled = false; btn.textContent = "Submit Request"; }
+    });
+  </script>
+</body>
+</html>
